@@ -1,7 +1,9 @@
 from usuarios.Cadastrar_usuario import UserGenerator
 from usuarios.type import TypeAcount
 from usuarios.Login import login
-from compra.Compra import Compras_1
+from usuarios.type import TypeAcount
+from usuarios.menu import usermenu
+from usuarios.menuadm import admmenu
 name = input("DIGITE SEU NOME: ").upper()
 users = {'Segundo123#': {'SENHA': 'Segundo123#', 'ADM': True}}
 while True:
@@ -23,4 +25,7 @@ while True:
         TypeAcount(users)
     elif esc == "2":
         login(users)
-        Compras_1()
+        if TypeAcount == "ADM":
+            admmenu()
+        else:
+            usermenu()

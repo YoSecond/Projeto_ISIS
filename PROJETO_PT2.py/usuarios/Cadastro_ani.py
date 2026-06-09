@@ -1,6 +1,6 @@
 def CadAnimal():
+    animais = []
     while True:
-        animais = []
         Name = input('DIGITE O NOME DO ANIMAL: ')
         Value = float(input('DIGITE O  VALOR DO ANIMAL: '))
         Brinco = input('DIGITE O BRINCO DO ANIMAL: ')
